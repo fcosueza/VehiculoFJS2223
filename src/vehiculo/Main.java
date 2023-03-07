@@ -2,10 +2,18 @@
 package vehiculo;
 
 /**
- *
+ *  Clase main de la aplicación.
+ * 
  * @author IES Aguadulce
+ * @author Francisco Sueza Rodríguez
  */
 public class Main {
+    
+    /**
+     * Método principal de la clase main.
+     * 
+     * @param args Lista de argumentos del metódo main
+     */
     
       public static void main(String[] args) {
         VehiculoSuezaRguezFco2223 miVehiculoSuezaRguezFco2223;
@@ -14,6 +22,14 @@ public class Main {
         miVehiculoSuezaRguezFco2223 = new VehiculoSuezaRguezFco2223("Seat",18000,100);
         operativaVehiculoSuezaRguezFco2223(miVehiculoSuezaRguezFco2223, 50); 
     }
+      
+    /**
+     * 
+     * @param miVehiculoSuezaRguezFco2223 objeto de tipo VehiculoSuezaRguez2223 sobre el que se opera
+     * @param cantidad cantidad de vehículos 
+     * @throws Exception si no se puede vender la cantidad determinada de vehículos
+     * @throws Exception si no se puede comprar la cantidad determinada de vehículos
+     */
 
     public static void operativaVehiculoSuezaRguezFco2223(VehiculoSuezaRguezFco2223 miVehiculoSuezaRguezFco2223, int cantidad) {
         int stockActual;
@@ -33,6 +49,7 @@ public class Main {
         {
             System.out.print("Fallo al comprar");
         }
+        
         stockActual = miVehiculoSuezaRguezFco2223.obtenerStock();
         System.out.println("El stock actual es"+ stockActual );
     }
